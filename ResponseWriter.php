@@ -78,7 +78,7 @@
       {
         echo $byteOrderMark;
       }
-      mb_convert_variables($charset, NULL, $responseMessage);
+      mb_convert_variables($charset, "ASCII,UTF-8,SJIS-win", $responseMessage);
       echo $responseMessage;
     }
   }
